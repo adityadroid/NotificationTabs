@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    app:cardElevation="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<ImageView
+    android:id="@+id/notificationImageView"
+    android:adjustViewBounds="true"
+    android:layout_width="match_parent"
+    android:src="@drawable/home_banner_sample"
+    android:layout_height="wrap_content" />
+<RelativeLayout
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="14dp"
+    android:paddingBottom="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <TextView
+        android:id="@+id/notificationTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/textColorPrimary"
+        android:layout_alignParentTop="true"
+        android:text="Not all superheroes wear a cape!"
+        />
+    <TextView
+        android:id="@+id/notificationPreviewTextView"
+        android:textColor="@color/textColorPrimary"
+        android:layout_marginTop="14dp"
+        android:textSize="12sp"
+        android:layout_below="@id/notificationTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_marginRight="16dp"
+        android:text="Share th MNC happiness with your friends, colleagues, loved ones and get rewarded-just refer and get Rs 50!"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="12sp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/notificationPreviewTextView"
+        android:text="Know More"
+        android:id="@+id/knowMoreTextView"
+        android:textColor="@color/accentBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="@color/textColorPrimary"
+        android:layout_below="@id/knowMoreTextView"
+        android:layout_marginTop="14dp"
+        android:id="@+id/separatorView"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"/>
+    <TextView
+        android:textSize="12sp"
+        android:id="@+id/dateTextView"
+        android:text="4 days ago"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/separatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
+
+
+</LinearLayout>
+
+</android.support.v7.widget.CardView>
